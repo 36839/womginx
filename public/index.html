@@ -60,7 +60,7 @@
     <div id="tohide">
       <div class="medium">
         <input type='text' placeholder='https://www.google.com/' id='url-target' ></input><br /><br />
-      <div class="big"><a href="javascript:window.location.href = document.getElementById('url-target').value">normal</a> / <a href="javascript:document.write%28%22%3Cdiv+position%3Aabsolute%3B+left%3A+0%3B+right%3A+0%3B+bottom%3A+0%3B+top%3A+0px%3B+%3E%3Ciframe+src%3D%27%2F%2Fuberbread.herokuapp.com%2Fmain%2F%27+%2B+document.getElementById%28%27url-target%27%29.value+style%3D%2527+position%3A+fixed%3B+top%3A+0px%3B+bottom%3A+0px%3B+right%3A+0px%3B+width%3A+100%2525%3B+border%3A+none%3B+margin%3A+0%3B+padding%3A+0%3B+overflow%3A+hidden%3B+z-index%3A+999999%3B+height%3A+100%2525%3B%2527+%3E%3E%3C%2Fiframe%3E%3C%2Fdiv%3E%22%29">framed</a></div><br/><br/>
+      <div class="big"><a href="javascript:window.location.href = 'https://uberbread.herokuapp.com/main/' + document.getElementById('url-target').value">normal</a> / <a href="javascript:(function()%7Bdocument.write(%22%3Cdiv%20position%3Aabsolute%3B%20left%3A%200%3B%20right%3A%200%3B%20bottom%3A%200%3B%20top%3A%200px%3B%20%3E%3Ciframe%20src%3D'%2F%2Fuberbread.herokuapp.com%2Fmain%2F'%2Bdocument.getElementById('url-target').value%20style%3D%2527%20position%3A%20fixed%3B%20top%3A%200px%3B%20bottom%3A%200px%3B%20right%3A%200px%3B%20width%3A%20100%2525%3B%20border%3A%20none%3B%20margin%3A%200%3B%20padding%3A%200%3B%20overflow%3A%20hidden%3B%20z-index%3A%20999999%3B%20height%3A%20100%2525%3B%2527%20%20%2F%3E%3C%2Fdiv%3E%22)%7D)()">framed</a></div><br/><br/>
     </div>
   </div>
 </body>
