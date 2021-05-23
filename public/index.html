@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="shortcut icon" type="image/png" href="logo.png" />
-    <title>NGINX Proxy</title>
+    <title>luphoria</title>
+    <script type="module" src="https://luphoria.github.io/index.js"></script>
+    <style>
+      body {
+        overflow:hidden;
+        cursor:pointer
+      }
+      canvas {
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        margin: 0px;
+        max-width:100%
+      }
+      .title {
+        font-weight:1000;
+      }
+      #textContainer {
+        width:100%;
+        font-family:"Arial", sans-serif;
+        color: #ffffff;
+        text-align:center;
+        font-size: 5vh;
+      }
+      a {
+        color:white;
+        font-family:'Courier New', Courier, monospace;
+      }
+      #projects {
+        visibility: hidden;
+      }
+      .big {
+        font-size: 5vh;
+      }
+      .medium {
+        font-size: 3vh;
+      }
+      .tiny {
+        font-size: 1.5vh;
+      }
+    </style>
 </head>
-
-<body>
-    <div class="container">
-        <img src="logo-full.png" width="250" height="250">
-        <div>
-            <script>
-                function go() {
-                    var input = document.getElementById('url-target');
-                    if (input.value) {
-                        window.open('/main/' + input.value);
-                    } else {
-                        alert('Please provide a link. It does not require https://.');
-                    }
-                }
-            </script>
-            <span class="w3-xlarge">Input your URL here: </span>
-            <div>
-                <input class="w3-xlarge" type='text' placeholder='https://www.google.com' id='url-target'
-                    onkeydown='if(event.key==="Enter") go()' />
-                <button onclick='go()' class="w3-xlarge">Go!</button>
-            </div>
-            <br>
-            <br>
-            </p>
-            <p class="w3-medium">View GitHub source <a class="w3-medium" href="https://github.com/binary-person/womginx">here</a></p>
-        </div>
+<body id="container">
+  <div id="textContainer">
+    <img src="https://luphoria.github.io/resources/luphoria.png" height="200" width="200"/>
+    <div class="title">bred</div>
+    <div id="tohide">
+      <div class="medium">
+        <input type='text' value="https://www.google.com/webhp?igu=1" placeholder='https://www.google.com/webhp?igu=1' id='url-target' onkeydown='if(event.key==="Enter") go()' ></input><br /><br />
+      <div class="medium">make sure to include a http://, https://, or // at the beginning of the url</div><br />
+      <div class="big"><a href="javascript:window.location.href = document.getElementById('url-target').value">normal</a> / <a href=`javascript:document.write("<div position:absolute; left: 0; right: 0; bottom: 0; top: 0px; ><iframe src='//uberbread.herokuapp.com/main/' + document.getElementById('url-target').value style=%27 position: fixed; top: 0px; bottom: 0px; right: 0px; width: 100%25; border: none; margin: 0; padding: 0; overflow: hidden; z-index: 999999; height: 100%25;%27 >></iframe></div>")`>framed</a></div><br/><br/>
     </div>
+  </div>
 </body>
-
 </html>
