@@ -54,9 +54,8 @@
     <div class="title">bred</div>
     <div id="tohide">
       <div class="medium">
-        <input type='text' value="https://www.google.com/webhp?igu=1" placeholder='https://www.google.com/webhp?igu=1' id='url-target' onkeydown='if(event.key==="Enter") go()' ></input><br /><br />
-      <div class="medium">make sure to include a http://, https://, or // at the beginning of the url</div><br />
-      <div class="big"><a href="javascript:window.location.href = document.getElementById('url-target').value">normal</a> / <a href=`javascript:document.write("<div position:absolute; left: 0; right: 0; bottom: 0; top: 0px; ><iframe src='//uberbread.herokuapp.com/main/' + document.getElementById('url-target').value style=%27 position: fixed; top: 0px; bottom: 0px; right: 0px; width: 100%25; border: none; margin: 0; padding: 0; overflow: hidden; z-index: 999999; height: 100%25;%27 >></iframe></div>")`>framed</a></div><br/><br/>
+        <input type='text' placeholder='https://www.google.com/' id='url-target' ></input><br /><br />
+      <div class="big"><a href="javascript:window.location.href = document.getElementById('url-target').value">normal</a> / <a href="javascript:document.write%28%22%3Cdiv+position%3Aabsolute%3B+left%3A+0%3B+right%3A+0%3B+bottom%3A+0%3B+top%3A+0px%3B+%3E%3Ciframe+src%3D%27%2F%2Fuberbread.herokuapp.com%2Fmain%2F%27+%2B+document.getElementById%28%27url-target%27%29.value+style%3D%2527+position%3A+fixed%3B+top%3A+0px%3B+bottom%3A+0px%3B+right%3A+0px%3B+width%3A+100%2525%3B+border%3A+none%3B+margin%3A+0%3B+padding%3A+0%3B+overflow%3A+hidden%3B+z-index%3A+999999%3B+height%3A+100%2525%3B%2527+%3E%3E%3C%2Fiframe%3E%3C%2Fdiv%3E%22%29">framed</a></div><br/><br/>
     </div>
   </div>
 </body>
